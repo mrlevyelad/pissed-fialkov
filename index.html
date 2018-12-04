@@ -92,7 +92,17 @@ body{
                    </div>
                </section>
             </div>
-        </div>   
+        </div>
+		<a id="changeName" onclick="randPost()">Piss him some more!</a>
 	</div>
 </div>
+<script>	
+var post = [{type:'מועמד',response:'יש לי שיטה סודית להוריד עלויות',orResponse:'צא לי מהמשרד'},{type:'מועמד',response:'אני מומחה למרקטינג אוטומיישן',orResponse:'צא לי מהמשרד'},{type:'לקוח',response:'נתחיל בקטן ואם תצליחו נגדיל תקציב',orResponse:'השיחה עולה לי יותר'},{type:'מועמד',response:'יש לי שיטה סודית להוריד עלויות',orResponse:'צא לי מהמשרד'},{type:'מועמד',response:'יש לי שיטה סודית להוריד עלויות',orResponse:'צא לי מהמשרד'}];
+function randPost() {
+var selectedPostNo = Math.floor(Math.random() * post.length);
+document.getElementById('type').placeholder = post[selectedPostNo].type;
+document.getElementById('response').placeholder = post[selectedPostNo].response;
+document.getElementById('orResponse').placeholder = post[selectedInvestorNo].orResponse;
+}
+</script>
 </body>
